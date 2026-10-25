@@ -18,4 +18,4 @@ The original PRD is broader than this release. See docs/IMPLEMENTATION.md before
 
 Repository transfer: source is installed at the root of `Koushik-Biswas/Creative_Ad_Generation`, with explicit container UID/GID initialization, updated repository links, a Render deployment button, and a `main`-branch Blueprint. Render deployment status must be verified separately after connecting an account.
 
-Target repository checks: the production build passed from the new repository-root layout. The root Render Blueprint uses the documented `0.5c-512mb` compute plan and a 1 GB `/data` persistent disk.
+Target repository checks: the production build passed from the new repository-root layout. The root Render Blueprint now uses the `free` compute plan without a persistent disk, and `EPHEMERAL_STORAGE=1` enables temporary-data notices on the login screen and dashboard. Live deployment verification is recorded separately after Render finishes building.

@@ -10,8 +10,8 @@
     },
     {
       "path": ".env.example",
-      "bytes": 493,
-      "sha256": "d2052c71a2e22468675b736dd920fdac075760a852c846a1800ce620f6efca65"
+      "bytes": 585,
+      "sha256": "9c492274ca257ed2b41ca07a50ddfc4ac94d931bbbda2150bf1c35844480ba05"
     },
     {
       "path": ".github/workflows/ci.yml",
@@ -35,13 +35,13 @@
     },
     {
       "path": "BUILD_VERIFICATION.md",
-      "bytes": 2215,
-      "sha256": "8dfb5f0e7fe9ba1f366db6aaca9acd2fa3ab8b338dab29dec453e77527533095"
+      "bytes": 2369,
+      "sha256": "085a0e5553944987e7d304b159eb286f112556178611dd29b651acae3edb5bef"
     },
     {
       "path": "DEPLOYMENT.md",
-      "bytes": 7332,
-      "sha256": "a9133de269354dba0a1dd0f12196cc461e9e932210a4a7b534d5e0a07f65b491"
+      "bytes": 7946,
+      "sha256": "1c69284b7d942ac689bcfdaf31bf97a1e37dd5d1cb7d42e87fa0f429d380a504"
     },
     {
       "path": "Dockerfile",
@@ -55,8 +55,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5398,
-      "sha256": "58c42bd95a638ee125b40786748257e0eafa62e9153db9deb89403b45ac97985"
+      "bytes": 5873,
+      "sha256": "0c40f3f347875dd1af1450b2c58cbe86b7a7d531569cc03cfd9ae5c2e8df3e8c"
     },
     {
       "path": "START_HERE.md",
@@ -80,8 +80,8 @@
     },
     {
       "path": "app/globals.css",
-      "bytes": 66775,
-      "sha256": "358075c02812d918b31c426a5b774f25096a0454008d039d7ed684550cda3bfe"
+      "bytes": 66813,
+      "sha256": "b2d46f0f89c57fae92f5cddc5b000eb54195fc5b36f782fdbd398bfc9576fdc6"
     },
     {
       "path": "app/layout.tsx",
@@ -90,8 +90,8 @@
     },
     {
       "path": "app/login/page.tsx",
-      "bytes": 270,
-      "sha256": "d30ffad81f80a55097f390b0620d4d102bfaf4c3dc654c846990fce8b9e618b2"
+      "bytes": 327,
+      "sha256": "23eb1fecbaf2f2f32218f39cb2b3c35ce0063f23fc67c7d921f22eaa6c7e7b15"
     },
     {
       "path": "app/page.tsx",
@@ -100,13 +100,13 @@
     },
     {
       "path": "components/login.tsx",
-      "bytes": 3094,
-      "sha256": "b7adb0987604434b09715e93060826eda60f806d7bd34385d4934a511770868e"
+      "bytes": 3523,
+      "sha256": "f2b830fc465b53ed443f3b821a702b64fe4f07fc016cdb1d15cd4172d669a595"
     },
     {
       "path": "components/studio.tsx",
-      "bytes": 126963,
-      "sha256": "c06e2f7566660310ae9883d3148e7ba3ca02cb71c1fe219bba67e01bc35ae57d"
+      "bytes": 127431,
+      "sha256": "612657c3d247c96a1f6b4f0c40ceaaf8fe071e2b5f8cf7da6dab2d5d6064db01"
     },
     {
       "path": "deploy/render-python.yaml",
@@ -220,8 +220,8 @@
     },
     {
       "path": "python/app/main.py",
-      "bytes": 24847,
-      "sha256": "12091adf84764526d935f5e2ba14a4416049619c56b50351e149c6bc78a719b5"
+      "bytes": 24989,
+      "sha256": "0530a2a0534bb674d46c98d6ac1f546b473dc91c3d193ec2b09992e35b93cddc"
     },
     {
       "path": "python/app/models.py",
@@ -265,8 +265,8 @@
     },
     {
       "path": "render.yaml",
-      "bytes": 611,
-      "sha256": "b789335edf9efbe7c9f4c658d519c90260319eab3cb5ce6b77604cd6f7eefef9"
+      "bytes": 577,
+      "sha256": "28ab36ea87ff062c97e26de4552559bb36d71d6d3daa9f90883decd65daa6aad"
     },
     {
       "path": "requirements-dev.txt",

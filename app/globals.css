@@ -5,6 +5,9 @@
   --line: #e6eae0;
   --paper: #f8f9f5;
 }
+.storage-notice {
+  margin: 18px 0;
+}
 * {
   box-sizing: border-box;
 }

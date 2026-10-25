@@ -8,7 +8,7 @@ An editable full-stack creative workspace built with **Next.js, React, Python/Fa
 
 Repository: https://github.com/Koushik-Biswas/Creative_Ad_Generation
 
-The application is at this repository's root on `main`. For Render, use Dockerfile `./Dockerfile`, Docker context `.`, health check `/api/health`, and a persistent disk at `/data`.
+The application is at this repository's root on `main`. For Render, use Dockerfile `./Dockerfile`, Docker context `.`, and health check `/api/health`. The default deployment uses the **Free** plan with temporary storage.
 
 ## Included
 
@@ -19,11 +19,11 @@ The application is at this repository's root on `main`. For Render, use Dockerfi
 - Approval gates, original branded image layouts, multiple ratios and configurable variations.
 - Copy/colour/treatment edits, AI copy revisions, favourites, approvals and saved version history.
 - PNG/JPG and campaign ZIP export with suggested copy, report, checks and provenance.
-- Private assets and persistent projects; server-side owner checks and optimistic revisions.
-- Password-protected workspace with signed HTTP-only sessions, a protected Python gateway and durable login-attempt limits.
+- Private assets and saved projects while storage is available; server-side owner checks and optimistic revisions.
+- Password-protected workspace with signed HTTP-only sessions, a protected Python gateway and database-backed login-attempt limits.
 - Docker/Compose, Render configurations, Vercel configuration, setup scripts and tests.
 
-The Render blueprint provisions a paid web service and persistent disk. Review the plan and pricing before approving deployment. Enter API keys in Render's secret settings; never commit them.
+The root Render blueprint selects **Free**, creates no disk or paid resources, and sets `EPHEMERAL_STORAGE=1`. Render Free sleeps after 15 minutes without traffic; campaigns, uploads and login counters reset on sleep, restart or redeploy. Download creative exports and reports before leaving. Hosting is free within Render's workspace quotas; Groq usage has separate provider quotas. Enter API keys in Render's environment settings; never commit them.
 
 ## Architecture
 
@@ -38,7 +38,7 @@ flowchart TD
   Browser --> Export[Local PNG/JPG and ZIP export]
 ```
 
-Render can run both services in one Docker container with a persistent disk. Vercel hosts only the Next.js layer; a separately deployed Python service stores the data. Browser requests remain same-origin, and the service token never reaches the browser.
+Render runs both services in one Docker container. Free uses temporary storage; optional paid disk storage can preserve data. Vercel hosts only the Next.js layer; a separately deployed Python service stores the data. Browser requests remain same-origin, and the service token never reaches the browser.
 
 ## Repository layout
 
@@ -76,7 +76,7 @@ Builds do not need API keys. Live LLM calls require the runtime Groq key. `scrip
 
 This package is a working first release, **not every requirement in the PRD completed**. See the matrix for dependencies and gaps. In particular, built-in universal ad-library collection, vision analysis, diffusion/photo generation, agency roles, custom fonts and full platform-policy compliance remain incomplete.
 
-The separately hosted ChatGPT example is at https://signal-studio-koushik.spunkyhare3.chatgpt.site and requires ChatGPT sign-in. That example uses a different hosting adapter. **This ZIP uses the Python backend and is designed for your own Render/Vercel deployment.** No Render or Vercel account has been provisioned by this package.
+This repository contains the portable Python backend and Next.js dashboard for deployment on Render or your own infrastructure. Check the Render service's deployment status and `/api/health` endpoint to verify a live release.
 
 ## Credentials and data
 
@@ -84,6 +84,6 @@ Run `npm run setup` to create an ignored local `.env.local` with fresh random se
 
 Keep `WORKSPACE_ID` stable to retain ownership of existing records. Changing `SESSION_SECRET` signs out current sessions. The password login is a single-owner workspace, not a multi-tenant membership or agency-role system.
 
-SQLite and assets require a persistent disk. The Python service is intended for one instance. For horizontal replicas, replace SQLite/local assets with PostgreSQL/object storage and add a durable job queue.
+Durable SQLite projects and assets require a persistent disk. Free preview data is temporary, as shown on the login screen and dashboard. For durable hosting, explicitly upgrade to a disk-capable plan, attach `/data`, and set `EPHEMERAL_STORAGE=0`. The Python service is intended for one instance. For horizontal replicas, replace SQLite/local assets with PostgreSQL/object storage and add a durable job queue.
 
 MIT © 2026 Koushik Biswas. See [LICENSE](LICENSE).

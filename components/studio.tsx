@@ -77,6 +77,7 @@ type Capabilities = {
   adCollection: boolean;
   renderer: string;
   runtime: string;
+  ephemeralStorage: boolean;
 };
 const STEPS = [
   "Business profile",
@@ -791,6 +792,16 @@ export default function Studio() {
           >
             <button type="submit">Sign out of workspace</button>
           </form>
+          {cap?.ephemeralStorage && (
+            <div className="notice storage-notice" role="note">
+              <Info size={17} />
+              <p>
+                <strong>Free preview · temporary storage.</strong> Campaigns and uploads
+                reset when the service sleeps, restarts or redeploys. Download your
+                creative exports and reports before leaving.
+              </p>
+            </div>
+          )}
           {!projects.length && (
             <div className="sample-banner">
               <span>

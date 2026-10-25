@@ -14,6 +14,7 @@ Choose **A: one Render service** for the simplest full-stack deployment. Choose 
 | `PYTHON_API_URL` | Vercel frontend only | Your Python service HTTPS origin, without `/api` |
 | `SERVICE_TOKEN` | Separate Python service only | Same secret as frontend's `PYTHON_SERVICE_TOKEN` |
 | `DATA_DIR` | Python service | Persistent disk path |
+| `EPHEMERAL_STORAGE` | Combined service / Python | `1` on Render Free, `0` only when storage persists |
 
 `npm run setup` generates local secrets without printing them. Render's blueprint can generate deployment secrets. Never use a `NEXT_PUBLIC_` prefix for any of these secrets.
 
@@ -37,12 +38,14 @@ If you are updating an existing repository with history, create a feature branch
 1. Connect the GitHub repository to Render.
 2. Create a **Web Service** using **Docker**, or create a Blueprint using `render.yaml`.
 3. For `Koushik-Biswas/Creative_Ad_Generation`, select branch **`main`**, leave Root Directory empty (repository root), set Dockerfile `./Dockerfile`, and Docker context `.`. The root `render.yaml` matches this layout.
-4. Use a service plan that supports a persistent disk. Attach a disk at **`/data`**, and set `DATA_DIR=/data`. The example blueprint requests a paid `0.5c-512mb` service (the former Starter plan) and a 1 GB disk; review current pricing in your Render account before creating resources.
+4. Select the **Free** plan, with **no persistent disk**. Set `DATA_DIR=/data` and `EPHEMERAL_STORAGE=1`. The root blueprint uses these settings and creates no paid resources. Data is temporary: campaigns, uploads and login counters reset on sleep, restart or redeploy. Download exports and reports before leaving. Free services sleep after 15 minutes without traffic and can take about a minute to wake; workspace usage quotas still apply.
 5. Set `GROQ_API_KEY` and `WORKSPACE_PASSWORD`. Generate `SESSION_SECRET` and `PYTHON_SERVICE_TOKEN` as runtime secrets.
 6. Set health-check path to **`/api/health`**. The launcher uses Render's provided `PORT` and starts both Next.js and Python.
 7. Deploy. Open the Render URL, log in using `WORKSPACE_PASSWORD`, and create your first campaign.
 
-In this combined mode, the launcher connects the gateway to the Python process over localhost. You do not need to configure an external Python URL or expose port 8000 publicly. Application processes run as UID 10001 after the persistent-disk directory is initialized.
+In this combined mode, the launcher connects the gateway to the Python process over localhost. You do not need to configure an external Python URL or expose port 8000 publicly. Application processes run as UID 10001 after the data directory is initialized.
+
+For optional durable hosting, explicitly choose a paid disk-capable plan, attach a disk at `/data`, and change `EPHEMERAL_STORAGE=0`. This upgrade is not part of the Free deployment. Retrieve or change your workspace login password in the Render service's Environment page under `WORKSPACE_PASSWORD`.
 
 `docker compose up --build -d` uses the same image locally. The Docker build must run on a host with Docker; the included source was checked with a Next.js production build and Python tests, and a Docker image build requires your Docker environment.
 
@@ -96,7 +99,7 @@ Configure `AD_LIBRARY_API_URL` and `AD_LIBRARY_API_KEY` on the **Python service*
 | Incorrect password | Use `WORKSPACE_PASSWORD` from the deployment environment, not the Groq key |
 | Too many sign-in attempts | Wait 15 minutes; the Python database keeps attempt counters |
 | Groq authentication/quota error | Replace the runtime key or check provider quota; never put it in source |
-| Campaigns disappear after redeploy | Mount persistent storage and point `DATA_DIR` at it |
+| Campaigns disappear after sleep or redeploy | Expected on Render Free. Download exports; durable hosting needs explicitly configured persistent storage |
 | Campaign changed in another tab | Reload and retry; stale writes are intentionally rejected |
 | No competitor ads collected | Import evidence manually or connect an authorized collector; do not assume no ads exist |
 | Vercel request timeout | Enable compatible Fluid compute settings or use the single Render deployment |

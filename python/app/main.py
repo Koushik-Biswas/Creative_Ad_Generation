@@ -124,7 +124,8 @@ async def bootstrap(request: Request):
     return {'projects':[{**json.loads(r['data']),'revision':r['revision']} for r in rows], 'user':{'name':'Koushik'}, 'capabilities':{
         'llm':bool(os.getenv('GROQ_API_KEY')), 'model':os.getenv('GROQ_MODEL','openai/gpt-oss-120b'),
         'adCollection':bool(os.getenv('AD_LIBRARY_API_URL')), 'renderer':'SVG/browser canvas + Python Pillow',
-        'runtime':'Python FastAPI · SQLite WAL · persistent disk'}}
+        'ephemeralStorage':os.getenv('EPHEMERAL_STORAGE')=='1',
+        'runtime':'Python FastAPI · SQLite WAL · '+('temporary storage' if os.getenv('EPHEMERAL_STORAGE')=='1' else 'configured local storage')}}
 
 @app.post('/api/projects', status_code=201)
 async def create_project(request: Request, settings: CampaignSettings):

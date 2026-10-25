@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import { ArrowUpRight, LockKeyhole, Loader2, Sparkles } from "lucide-react";
-export default function Login() {
+import { ArrowUpRight, Info, LockKeyhole, Loader2, Sparkles } from "lucide-react";
+export default function Login({ ephemeralStorage = false }: { ephemeralStorage?: boolean }) {
   const [password, setPassword] = useState(""),
     [error, setError] = useState(""),
     [busy, setBusy] = useState(false);
@@ -63,6 +63,15 @@ export default function Login() {
           <span className="eyebrow">WELCOME TO YOUR STUDIO</span>
           <h2>A fresh perspective awaits.</h2>
           <p>Enter the workspace password you configured during deployment.</p>
+          {ephemeralStorage && (
+            <div className="notice storage-notice" role="note">
+              <Info size={17} />
+              <p>
+                Free preview: saved campaigns and uploads are temporary. Download
+                exports before leaving. The service may take a minute to wake up.
+              </p>
+            </div>
+          )}
           <label className="field">
             <span>Workspace password</span>
             <input

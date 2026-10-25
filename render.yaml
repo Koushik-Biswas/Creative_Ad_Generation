@@ -3,7 +3,7 @@ services:
     name: creative-ad-generation
     runtime: docker
     branch: main
-    plan: 0.5c-512mb
+    plan: free
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /api/health
@@ -20,7 +20,5 @@ services:
         generateValue: true
       - key: DATA_DIR
         value: /data
-    disk:
-      name: creative-ad-data
-      mountPath: /data
-      sizeGB: 1
+      - key: EPHEMERAL_STORAGE
+        value: "1"
