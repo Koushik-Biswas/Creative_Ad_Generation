@@ -1,7 +1,7 @@
 {
   "project": "Signal Studio",
   "version": "1.0.0",
-  "note": "Source files only. Environment secrets, dependencies, local data and generated builds are excluded. Manifest excludes its own hash.",
+  "note": "Tracked source, documentation and demo media. Secrets, dependencies, local data and generated builds are excluded. Manifest excludes its own hash.",
   "files": [
     {
       "path": ".dockerignore",
@@ -55,8 +55,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5873,
-      "sha256": "0c40f3f347875dd1af1450b2c58cbe86b7a7d531569cc03cfd9ae5c2e8df3e8c"
+      "bytes": 28061,
+      "sha256": "6216234de722a30a362729192f18cd24a277a489ba315bbb3380a03a085ebe50"
     },
     {
       "path": "START_HERE.md",
@@ -137,6 +137,96 @@
       "path": "docs/PROJECT_REQUIREMENTS.md",
       "bytes": 42612,
       "sha256": "97e612b73d39aa9ef1a973cc9551edc8db4c926c16d466c54545bf905d977b83"
+    },
+    {
+      "path": "docs/assets/architecture.png",
+      "bytes": 111879,
+      "sha256": "55c78a0ce53c6ef45bc0d194a29a080fc8c3bf0160a73360e0b292255327528e"
+    },
+    {
+      "path": "docs/assets/architecture.svg",
+      "bytes": 7943,
+      "sha256": "7c96794ec2edff0f41f8bcea49686d39e9a32fa46faefbed2538e0020c14d76e"
+    },
+    {
+      "path": "docs/assets/campaign-export.png",
+      "bytes": 387461,
+      "sha256": "65a7c67ef9d11314e0f752aef364265cf461050a6c17546dd16d30fad9d0872f"
+    },
+    {
+      "path": "docs/assets/creative-editor.png",
+      "bytes": 265945,
+      "sha256": "23ab5ed6f739ea7ee090ff13c7d9d37c41d4eae27eacd49ed3c2a80debb4b5d5"
+    },
+    {
+      "path": "docs/assets/creative-gallery.png",
+      "bytes": 504353,
+      "sha256": "b6c2c383e180b1e94488d4bb98509522a17b584f4bc6cd0dcfee3d8297311a4a"
+    },
+    {
+      "path": "docs/assets/dashboard.png",
+      "bytes": 474758,
+      "sha256": "80267ff87b1aca3f1e17c10d6c4378a70d58c3d4f885dce38e3482fb85e6139e"
+    },
+    {
+      "path": "docs/assets/data-model.png",
+      "bytes": 101027,
+      "sha256": "15044b4e155193d899c3d663694dc0f5a00b67811575e295f4395e7cc828e7af"
+    },
+    {
+      "path": "docs/assets/data-model.svg",
+      "bytes": 5481,
+      "sha256": "0bae23fb9130df659fd4d8c052c2589374e83f4a1ef6e1e2d4a3ae064e704968"
+    },
+    {
+      "path": "docs/assets/hero.png",
+      "bytes": 58444,
+      "sha256": "e8d60baddf76e1f09526dadd8417c652b2f55b002458e0a1f1c1ad81ea3b2ea2"
+    },
+    {
+      "path": "docs/assets/hero.svg",
+      "bytes": 1958,
+      "sha256": "f48afb427da6395ef69297de1ac0e181a7e2d2c263bbabd672bc87cca633d26b"
+    },
+    {
+      "path": "docs/assets/infrastructure.png",
+      "bytes": 129920,
+      "sha256": "af4b048eea9b3640e12691fcffbdf52c67b22f40f522f1a1502e6cdfe624d6e0"
+    },
+    {
+      "path": "docs/assets/infrastructure.svg",
+      "bytes": 7034,
+      "sha256": "3535514ca95bb428a81d348e8f1e285c33864987fe27fcf46f48b2e2ddd3225c"
+    },
+    {
+      "path": "docs/assets/production-roadmap.png",
+      "bytes": 101110,
+      "sha256": "1643b71cdcfc124309cf5a31f3d5e257b002c14688c2db094b10baef10f8de11"
+    },
+    {
+      "path": "docs/assets/production-roadmap.svg",
+      "bytes": 7354,
+      "sha256": "f676bd39e09dd064d3394d635dead15d052309ff26fd35b4039ae32e74d75bc4"
+    },
+    {
+      "path": "docs/assets/system-design.png",
+      "bytes": 113836,
+      "sha256": "8feb89224dde02a20e22e7686438136b5c75393a65474bd2124b31d7c29eb2c5"
+    },
+    {
+      "path": "docs/assets/system-design.svg",
+      "bytes": 7849,
+      "sha256": "c9f539a59684b76acf60b77df62aaefa43715c4af748a44aef948f04deb87f35"
+    },
+    {
+      "path": "docs/media/Signal_Studio_AI_Demo.mp4",
+      "bytes": 864097,
+      "sha256": "809cc3ef90370343359ccdb8853df8b60cb029283fbede241a4c0aaaa1810f8f"
+    },
+    {
+      "path": "docs/media/demo-poster.jpg",
+      "bytes": 229277,
+      "sha256": "2e89cdfacfb630b41624f72d5b0d6a8828dcffbb67bd4db23a4e4523d3ca933c"
     },
     {
       "path": "lib/auth.ts",

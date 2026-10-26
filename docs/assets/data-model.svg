@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120"><rect width="1800" height="1120" fill="#f4f7ef"/>
+<text x="65" y="65" fill="#244c3c" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">SIGNAL STUDIO / ENGINEERING</text>
+<text x="65" y="141" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="45" font-weight="700">Storage and consistency model</text>
+<text x="65" y="181" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Current schema · project JSON documents + private binary assets</text>
+<rect x="65" y="255" width="500" height="360" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="255" width="500" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="312" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">projects</text>
+<text x="88" y="360" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">id: TEXT primary key</text>
+<text x="88" y="394" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">owner, title, data: TEXT</text>
+<text x="88" y="428" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">revision: INTEGER</text>
+<text x="88" y="462" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">updated: TEXT</text>
+<text x="88" y="496" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Index: projects_owner</text>
+<text x="88" y="591" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">UPDATE checks owner + old revision</text>
+<rect x="650" y="255" width="500" height="360" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="650" y="255" width="500" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="673" y="312" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">assets</text>
+<text x="673" y="360" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">id: TEXT primary key</text>
+<text x="673" y="394" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">owner, project_id, name: TEXT</text>
+<text x="673" y="428" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">mime: TEXT / size: INTEGER</text>
+<text x="673" y="462" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Index: assets_project</text>
+<text x="673" y="496" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Bytes: DATA_DIR/uploads/{id}</text>
+<text x="673" y="591" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Logical link; no declared SQL FK</text>
+<rect x="1235" y="255" width="500" height="360" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1235" y="255" width="500" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1258" y="312" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">usage</text>
+<text x="1258" y="360" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">id: TEXT primary key</text>
+<text x="1258" y="394" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">count: INTEGER</text>
+<text x="1258" y="428" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Agent minute buckets</text>
+<text x="1258" y="462" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Sign-in 15-minute buckets</text>
+<text x="1258" y="496" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Counters stored in SQLite</text>
+<text x="1258" y="591" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Counters reset with ephemeral data</text>
+<polyline points="565,420 650,420" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="650,420 636.4932934647098,426.52448301166845 636.4932934647098,413.47551698833155" fill="#78916a"/>
+<text x="575" y="405" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400">project_id</text>
+<rect x="65" y="720" width="1670" height="230" rx="18" fill="#e9efdc" stroke="#d4dfce" stroke-width="2"/>
+<text x="95" y="781" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="31" font-weight="700">Inside projects.data</text>
+<text x="95" y="832" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="400">settings · profile · sources · competitors · evidence · report · concepts</text>
+<text x="95" y="877" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="400">creatives + bounded history · batch contexts · asset references · activity log</text>
+<text x="95" y="923" fill="#244c3c" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700">SQLite WAL / 10-second connection timeout / optimistic revisions / owner-filtered reads</text>
+<text x="65" y="1089" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400">Current implementation unless explicitly marked proposed. See README for operating limits.</text>
+</svg>

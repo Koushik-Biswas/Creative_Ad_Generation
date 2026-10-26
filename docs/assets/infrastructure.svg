@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1150" viewBox="0 0 1800 1150"><rect width="1800" height="1150" fill="#f4f7ef"/>
+<text x="65" y="65" fill="#244c3c" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">SIGNAL STUDIO / ENGINEERING</text>
+<text x="65" y="141" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="45" font-weight="700">Deployment and infrastructure</text>
+<text x="65" y="181" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Current Render Free deployment · Singapore · a single Docker web service</text>
+<rect x="65" y="245" width="390" height="220" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="245" width="390" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="302" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">GitHub / main</text>
+<text x="88" y="350" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Source + npm lockfile</text>
+<text x="88" y="384" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">CI: web + Python checks</text>
+<text x="88" y="418" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">README media in docs/</text>
+<text x="88" y="441" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Docs commits: [skip render]</text>
+<rect x="590" y="245" width="430" height="220" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="590" y="245" width="430" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="613" y="302" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Multi-stage Docker build</text>
+<text x="613" y="350" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Node 22: npm ci + build</text>
+<text x="613" y="384" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Python 3.12 runtime image</text>
+<text x="613" y="418" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Next standalone + Python code</text>
+<text x="613" y="441" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">No Python in a Vercel function</text>
+<polyline points="455,350 590,350" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="590,350 576.4932934647098,356.52448301166845 576.4932934647098,343.47551698833155" fill="#78916a"/>
+<rect x="1130" y="235" width="605" height="800" rx="18" fill="#eaf0e0" stroke="#d4dfce" stroke-width="2"/>
+<text x="1158" y="290" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="29" font-weight="700">Render managed HTTPS edge</text>
+<rect x="1170" y="330" width="525" height="200" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1170" y="330" width="525" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1193" y="387" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Public Next.js process</text>
+<text x="1193" y="435" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">0.0.0.0:$PORT (default 10000)</text>
+<text x="1193" y="469" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Session, UI and protected proxy</text>
+<text x="1193" y="506" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">GET /api/health proxies to Python</text>
+<rect x="1170" y="590" width="525" height="200" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1170" y="590" width="525" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1193" y="647" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Private Python process</text>
+<text x="1193" y="695" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">127.0.0.1:8000 / Uvicorn</text>
+<text x="1193" y="729" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">FastAPI + Groq + Pillow</text>
+<text x="1193" y="766" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">run.py supervises both processes</text>
+<polyline points="1432,530 1432,590" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1432,590 1425.4755169883315,576.4932934647098 1438.5244830116685,576.4932934647098" fill="#78916a"/>
+<text x="1455" y="566" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">localhost</text>
+<rect x="1170" y="840" width="525" height="125" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<text x="1195" y="886" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="25" font-weight="700">/data · ephemeral filesystem</text>
+<text x="1195" y="926" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="400">signal.db + private uploaded files</text>
+<polyline points="1020,350 1130,350" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1130,350 1116.49329346471,356.52448301166845 1116.49329346471,343.47551698833155" fill="#78916a"/>
+<rect x="65" y="650" width="390" height="240" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="650" width="390" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="707" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Users on the internet</text>
+<text x="88" y="755" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">HTTPS → Render public URL</text>
+<text x="88" y="789" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">No direct Python exposure</text>
+<text x="88" y="823" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Password-protected workspace</text>
+<text x="88" y="866" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Browser-generated image ZIPs</text>
+<polyline points="455,765 1070,765 1070,415 1170,415" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1170,415 1156.49329346471,421.52448301166845 1156.49329346471,408.47551698833155" fill="#78916a"/>
+<text x="650" y="745" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">HTTPS requests</text>
+<text x="590" y="1074" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="700">Free sleeps on idle; data resets on restart, redeploy or spin-down.</text>
+<text x="65" y="1119" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400">Current implementation unless explicitly marked proposed. See README for operating limits.</text>
+</svg>

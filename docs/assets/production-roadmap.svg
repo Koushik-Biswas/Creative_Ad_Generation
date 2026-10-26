@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1160" viewBox="0 0 1800 1160"><rect width="1800" height="1160" fill="#f4f7ef"/>
+<text x="65" y="65" fill="#244c3c" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">SIGNAL STUDIO / ENGINEERING</text>
+<text x="65" y="141" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="45" font-weight="700">Production evolution — proposed design</text>
+<text x="65" y="181" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Planning guidance only · these external services are not provisioned or implemented</text>
+<rect x="65" y="245" width="450" height="240" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="245" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="302" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Identity + edge</text>
+<text x="88" y="350" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">OIDC / SSO + MFA</text>
+<text x="88" y="384" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Tenant membership + RBAC</text>
+<text x="88" y="418" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">WAF and shared rate limiting</text>
+<text x="88" y="461" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Replace single-owner password login</text>
+<rect x="675" y="245" width="450" height="240" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="675" y="245" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="698" y="302" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Application services</text>
+<text x="698" y="350" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Stateless Next.js gateway</text>
+<text x="698" y="384" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Versioned FastAPI service</text>
+<text x="698" y="418" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Tenant-aware authorization</text>
+<text x="698" y="461" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Scale after externalizing state</text>
+<rect x="1285" y="245" width="450" height="240" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1285" y="245" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1308" y="302" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Durable job execution</text>
+<text x="1308" y="350" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Queue + worker pool</text>
+<text x="1308" y="384" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Job IDs, progress, retries</text>
+<text x="1308" y="418" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Idempotency + dead letters</text>
+<text x="1308" y="461" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Replace in-request long jobs</text>
+<polyline points="515,365 675,365" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="675,365 661.4932934647098,371.52448301166845 661.4932934647098,358.47551698833155" fill="#78916a"/>
+<polyline points="1125,365 1285,365" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1285,365 1271.49329346471,371.52448301166845 1271.49329346471,358.47551698833155" fill="#78916a"/>
+<rect x="65" y="720" width="450" height="230" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="720" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="777" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Managed PostgreSQL</text>
+<text x="88" y="825" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Migrations + transactions</text>
+<text x="88" y="859" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Backups + point-in-time restore</text>
+<text x="88" y="893" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Tenant indexes + retention</text>
+<text x="88" y="926" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Validate restore / RPO / RTO</text>
+<rect x="675" y="720" width="450" height="230" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="675" y="720" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="698" y="777" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Private object storage</text>
+<text x="698" y="825" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Versioned upload objects</text>
+<text x="698" y="859" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Signed access + lifecycle</text>
+<text x="698" y="893" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Content scanning + quotas</text>
+<text x="698" y="926" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Replace local uploaded files</text>
+<rect x="1285" y="720" width="450" height="230" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1285" y="720" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1308" y="777" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Operational controls</text>
+<text x="1308" y="825" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Central logs, metrics, traces</text>
+<text x="1308" y="859" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Alerts + provider spend budgets</text>
+<text x="1308" y="893" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">CI gates + staged rollout</text>
+<text x="1308" y="926" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Load test before defining an SLA</text>
+<polyline points="900,485 900,600 290,600 290,720" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="290,720 283.47551698833155,706.4932934647098 296.52448301166845,706.4932934647098" fill="#78916a"/>
+<polyline points="900,600 900,720" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="900,720 893.4755169883315,706.4932934647098 906.5244830116685,706.4932934647098" fill="#78916a"/>
+<polyline points="1510,485 1510,720" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1510,720 1503.4755169883315,706.4932934647098 1516.5244830116685,706.4932934647098" fill="#78916a"/>
+<text x="65" y="1129" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400">Current implementation unless explicitly marked proposed. See README for operating limits.</text>
+</svg>

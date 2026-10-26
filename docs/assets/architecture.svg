@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120"><rect width="1800" height="1120" fill="#f4f7ef"/>
+<text x="65" y="65" fill="#244c3c" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">SIGNAL STUDIO / ENGINEERING</text>
+<text x="65" y="141" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="45" font-weight="700">Application architecture</text>
+<text x="65" y="181" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Current release · one public gateway · one private Python API</text>
+<rect x="65" y="240" width="370" height="245" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="240" width="370" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="297" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Browser dashboard</text>
+<text x="88" y="345" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">React 19 + Next.js UI</text>
+<text x="88" y="379" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Campaigns, review, editing</text>
+<text x="88" y="413" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Same-origin /api requests</text>
+<text x="88" y="461" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Signed HTTP-only session</text>
+<rect x="650" y="240" width="450" height="245" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="650" y="240" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="673" y="297" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Next.js gateway</text>
+<text x="673" y="345" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Session + origin checks</text>
+<text x="673" y="379" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Protected API proxy</text>
+<text x="673" y="413" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">220-second upstream timeout</text>
+<text x="673" y="461" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Node.js 22 / App Router</text>
+<rect x="1290" y="240" width="445" height="245" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1290" y="240" width="445" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1313" y="297" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">FastAPI application</text>
+<text x="1313" y="345" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Owner-scoped operations</text>
+<text x="1313" y="379" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Research + Pydantic contracts</text>
+<text x="1313" y="413" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Approvals + Pillow renderer</text>
+<text x="1313" y="461" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Python 3.12 / loopback:8000</text>
+<polyline points="435,355 650,355" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="650,355 636.4932934647098,361.52448301166845 636.4932934647098,348.47551698833155" fill="#78916a"/>
+<text x="469" y="336" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">HTTPS / JSON</text>
+<polyline points="1100,355 1290,355" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1290,355 1276.49329346471,361.52448301166845 1276.49329346471,348.47551698833155" fill="#78916a"/>
+<text x="1121" y="336" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">Service token</text>
+<rect x="65" y="730" width="370" height="230" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="65" y="730" width="370" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="88" y="787" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Local creative export</text>
+<text x="88" y="835" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">SVG + browser canvas</text>
+<text x="88" y="869" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">PNG / JPG / campaign ZIP</text>
+<text x="88" y="903" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Research, copy, provenance</text>
+<text x="88" y="936" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Runs in the browser</text>
+<rect x="650" y="730" width="450" height="230" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="650" y="730" width="450" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="673" y="787" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">Private local storage</text>
+<text x="673" y="835" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">SQLite WAL: signal.db</text>
+<text x="673" y="869" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Asset metadata + upload files</text>
+<text x="673" y="903" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Versioned project JSON</text>
+<text x="673" y="936" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Free preview = temporary</text>
+<rect x="1290" y="730" width="445" height="230" rx="18" fill="#ffffff" stroke="#d4dfce" stroke-width="2"/>
+<rect x="1290" y="730" width="445" height="8" rx="3" fill="#244c3c" stroke="#244c3c" stroke-width="2"/>
+<text x="1313" y="787" fill="#213e34" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="700">External integrations</text>
+<text x="1313" y="835" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Groq: structured text</text>
+<text x="1313" y="869" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Public business HTML pages</text>
+<text x="1313" y="903" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="22" font-weight="400">Optional authorized collector</text>
+<text x="1313" y="936" fill="#7156c9" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700">Secrets stay on the server</text>
+<polyline points="245,485 245,730" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="245,730 238.47551698833155,716.4932934647098 251.52448301166845,716.4932934647098" fill="#78916a"/>
+<text x="267" y="613" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">Render + download</text>
+<polyline points="1420,485 1420,610 875,610 875,730" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="875,730 868.4755169883315,716.4932934647098 881.5244830116685,716.4932934647098" fill="#78916a"/>
+<text x="668" y="668" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">Read / write with ownership + revision checks</text>
+<polyline points="1575,485 1575,730" fill="none" stroke="#78916a" stroke-width="4"/>
+<polygon points="1575,730 1568.4755169883315,716.4932934647098 1581.5244830116685,716.4932934647098" fill="#78916a"/>
+<text x="1595" y="603" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400">Outbound HTTPS</text>
+<text x="65" y="1089" fill="#64786b" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400">Current implementation unless explicitly marked proposed. See README for operating limits.</text>
+</svg>
